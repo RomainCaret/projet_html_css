@@ -1,0 +1,31 @@
+
+body,html {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto 80px;
+    height: 100%;
+  }
+  .header {
+    grid-column: 1 / 2 ;
+    grid-row: 1;
+    background: #3a51fb;
+    color: white;
+  }
+  #content {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ft {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    background:#3a51fb;
+  }
