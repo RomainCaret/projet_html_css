@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  display: flex;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bouton2 {
+  width: 50%;
+  color: white;
+  background: #2196f3;
+  display: inline-flex;
+  margin: 0 auto;
+  border-color: #2196f3;
+  outline: none;
+  padding: 20px 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.image {
+  border-style: solid;
+  height: 100%;
+  width: 100%;
+  box-sizing: content-box;
+
+
+}
+
+
+
+.elem1 {
+  grid-area: header;
+  color: white;
+  background: #2196f3;
+  padding-left: 20px;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.elem2 {
+  grid-area: main;
+}
+
+.elem1-1 {
+
+  grid-area: left;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.elem1-2 {
+  padding-left: 10%;
+  object-fit: contain;
+  grid-area: main;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.elem1-3 {
+  grid-area: right;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding-top: 100%;
+}
+
+.elem3 {
+  grid-area: footer;
+  color: white;
+  background: #2196f3;
+  height: 50%;
+  padding-left: 20px;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container {
+  align-content: space-between;
+  display: grid;
+  width: 100%;
+  height: 84vh;
+  grid-template-columns: 100vw;
+  grid-template-rows: 90px 100% 148px;
+  grid-template-areas:
+      "header"
+      "main"
+      "footer";
+}
+
+.card {
+  padding: 1rem;
+  height: 4rem;
+}
+
+.container2 {
+
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "left main right";
+  background-color: rgb(241, 237, 237);
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10.5rem;
+}
+
+.elem4 { grid-area: footer; 
+  color:white;
+  text-align: center;
+  background-color:#2196f3;
+}
+
+@media (min-width: 600px) {
+  .cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+

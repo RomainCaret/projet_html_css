@@ -2,46 +2,65 @@
 
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
     <meta charset="UTF-8">
-<title>Login</title>
+<title>List</title>
 </head>
 <body>
     
-    <div class="wrapper">
-        <header id="header">
-            <span>
-                Sign In
-            </span>
-        </header>
-        <div id="content">
-            <div class="welcome">
-                <br>
-                <img id="imglogo" src="C:\Users\Romain\git\html\projet_html_css\icone.svg" width=10%>
-                <br>
-                <div id="largetitle">
-                    Welcome !
+  <div class="container">
+    <div class="elem1">
+        <h1>Ad List</h1>
+    </div>
+
+    <div class="elem2">
+        <button class="bouton2">ALL ADS</button><button class="bouton2">MY ADS</button>
+
+        <div class="cards">
+            <div class="card">
+                <div class="container2">
+                    <div class="elem1-1">
+                        <img src="article.png" class="image">
+                    </div>
+                    <div class="elem1-2">
+                        <p><strong>Title</strong><br>
+                            Description
+                        </p>
+                        <p>1 hour ago</p>
+                    </div>
+                    <div class="elem1-3">
+                        <p><strong>$99,00</strong></p>
+                    </div>
                 </div>
-                <div id="smalltitle">
-                    Please sign in to acess content !
+            </div>
+            <div class="card">
+                <div class="container2">
+                    <div class="elem1-1">
+                        <img src="article.png" class="image">
+                    </div>
+                    <div class="elem1-2">
+                        <p><strong>Title</strong><br>
+                            Description
+                        </p>
+                        <p>1 hour ago</p>
+                    </div>
+                    <div class="elem1-3">
+                        <p><strong>$99,00</strong></p>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="input" data-validate="Valid Username is required">
-                <input class="txt" placeholder="Username">
-            </div>
-            <div class="input" data-validate="Valid Username is required">
-                <input class="txt" placeholder="Password">
-            </div>
-            <div class="btn">
-                <button class="loginbtn">
-                Sign in
-                </button>
             </div>
         </div>
-        <footer class="ft">
-            All rights reserved Gregory Galli
-        </footer>
     </div>
+
+    <div class="elem4">
+        <ul>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://www.google.com/intl/fr/gmail/about/">Email</a></li>
+          <li><a href="https://github.com">Github</a></li>
+        </ul>
+      <div>All rights reserved Gregory Galli</div>
+        
+      </div>
+
 </body>
 </html>
